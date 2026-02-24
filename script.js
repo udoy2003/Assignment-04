@@ -119,3 +119,4 @@ function removeFrom(list,id){
 allBtn.onclick=()=>toggleStyle('all-btn');
 interviewBtn.onclick=()=>toggleStyle('interview-btn');
 rejectedBtn.onclick=()=>toggleStyle('rejected-btn');
+// it was too hard

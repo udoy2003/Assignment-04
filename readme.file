@@ -1,1 +1,47 @@
-1---
+
+1. What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
+
+
+getElementById diye amra nirdisto ekta id er element pai. Eta sobsomoy ekta matro element return kore, karon id unique hoy.
+getElementsByClassName diye eki class thaka ekadhik element pawa jay. Eta HTMLCollection return kore ebong DOM change hole eta update hoy (live).
+querySelector CSS selector use kore prothom matching element return kore. Ar querySelectorAll sob matching element return kore.
+
+querySelectorAll ekta NodeList dey ja sadharonoto static hoy (DOM change hole automatic update hoy na).
+
+getElementById shudhu id er jonno use kora jay. Kintu querySelector diye id, class, tag sob kichu select kora jay. Tai flexibility er jonno oneke querySelector beshi use kore. Tobe shudhu id dorkar hole getElementById ektu fast kaj kore.
+
+
+
+
+
+
+
+
+
+2. How do you create and insert a new element into the DOM? 
+
+
+document.createElement() use kore notun element toiri korte hoy. Tarpor er moddhe lekha dite innerText ba innerHTML use kora jay. Proyojon hole class ba id add kora jay. Tarpor jei jaygay element boshate chai shei parent element select korte hoy. appendChild() use kore element sheshe add kora jay. append() diyeo add kora jay. Jodi upore boshate chai tahole prepend() use kora jay. insertBefore() diye nirdisto element er age boshano jay. Evabe JavaScript diye dynamic content add kora sombhob. Fole page reload chara notun element dekha jay.
+
+
+
+
+
+3. What is Event Bubbling? And how does it work? 
+
+Event Bubbling mane holo event nicher element theke uparer dike jawa. Dhoro ekta button ekta div er vitore ache. Button e click korle prothome button er event cholbe. Tarpor shei event div e jabe. Erpor body ebong document porjonto jete pare. Evabe child theke parent er dike event choriye pore. Beshirvog event evabei kaj kore. Kokhono eta problem toiri korte pare jodi parent eo same event thake. Tokhon stopPropagation() use kore bubbling bondho kora jay. Ei prokriake Event Bubbling bola hoy.
+
+
+
+
+ 4. What is Event Delegation in JavaScript? Why is it useful? 
+
+Event Delegation holo parent element e listener boshiye child element er event handle kora. Proti child e alada kore listener boshano dorkar hoy na. Karon event bubbling hoye parent porjonto ashe. Tokhon event.target diye bujha jay kon child e click hoyeche. Eta performance er jonno valo. Onak element thakle alada alada listener dile code boro hoye jay. Kintu delegation use korle code choto o porishkar thake. Dynamic element thakleo notun kore listener boshate hoy na. Tai boro project e eta khub upokari.
+
+
+
+
+5. What is the difference between preventDefault() and stopPropagation() methods? 
+
+
+preventDefault() kono element er shabhavik kaj bondho kore. Jemon form submit korle page reload hoy, eta preventDefault() diye bondho kora jay. Anchor tag e click korle onno page e jay, eta o bondho kora jay. Onnodike stopPropagation() event er uparer dike jawa bondho kore. Mane parent element e event jabe na. preventDefault() default behaviour bondho kore kintu bubbling bondho kore na. stopPropagation() bubbling bondho kore kintu default kaj bondho kore na. Tai duitar kaj alada. Proyojon onujayi thik method use korte hoy.
