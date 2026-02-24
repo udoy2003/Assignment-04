@@ -96,7 +96,7 @@ document.body.addEventListener("click", e=>{
     }
   }
 
-  
+  // del
   if(e.target.classList.contains("delete-btn")){
     removeFrom(interviewList,id);
     removeFrom(rejectedList,id);
