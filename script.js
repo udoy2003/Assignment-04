@@ -70,7 +70,7 @@ document.body.addEventListener("click", e=>{
 
   const id = card.dataset.id;
 
-  // INTERVIEW
+  
   if(e.target.classList.contains("interview-btn")){
     removeFrom(rejectedList,id);
 
